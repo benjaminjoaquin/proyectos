@@ -1,0 +1,294 @@
+/* *{
+
+
+    border: 2px solid red;
+} */
+
+body {
+    
+    margin: 0;
+    background: #4d7488;
+    color: rgb(37, 6, 6);
+   
+   height: max-content;
+
+}
+
+
+/* Animation webkit */
+@-webkit-keyframes myfirst {
+    0% {
+        margin-left: -235px
+    }
+
+    90% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+/* Animation */
+@keyframes myfirst {
+    0% {
+        margin-left: -235px
+    }
+
+    70% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+
+.fish {
+    background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
+
+    width: 235px;
+    height: 104px;
+
+    margin-left: -235px;
+    position: fixed;
+    /*absolute*/
+    animation: myfirst 24s;
+    -webkit-animation: myfirst 24s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+
+}
+
+#fish {
+    top: 10px;
+}
+
+#fish2 {
+    top: 260px;
+    animation-delay: 12s;
+    -webkit-animation-delay: 12s;
+}
+
+
+#fish3 {
+    top: 500px;
+    animation-delay: 24s;
+    -webkit-animation-delay: 24s;
+}
+
+
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #b7e0fc;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+
+
+p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+
+.contenedor {
+    opacity: 90%; 
+    margin: 0 auto;
+    margin-top: 1%;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 950px;
+   /* min-height: 500px;*/
+    border: 5px solid lightgrey;
+    /* justify-content: center; */
+}
+
+
+.banner {
+    flex: 0 0 100%;
+    height: 85px;
+    background-color: #383d3f;
+    border: 1px solid aquamarine;
+    opacity: 70%;
+
+}
+
+.sidebar {
+
+    flex: 0 0 15%;
+    background: #b7e0fc;
+}
+
+.sidebar div {
+
+    background-color: #fafcfd;
+    padding: 5px;
+    border: 3px solid black;
+   
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+    .sidebar {
+
+        flex: 0 0 100%;
+    }
+
+}
+
+iframe {
+    width: 100%; 
+    height: 100%;
+    
+}
+
+.contenido {
+
+    flex: 0 0 85%;
+    background: #f2f7fa;
+    
+    /* height:  460px; */
+    /*   align-items:flex-start ;
+    display: inline; */
+   
+
+min-height: 450px;
+}
+
+
+
+
+
+
+
+.footer {
+    background: #b7e0fc;
+
+    flex: 0 0 100%;
+
+}
+
+.avatar {
+    float: right;
+}
+
+.avatar-85 {
+    border: 3px solid white;
+    border-radius: 85px;
+    margin-right: 10px;
+}
+
+.avatar-86 {
+    border: 3px solid #fff;
+    border-radius: 50px;
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+    padding: 1%;
+}
+
+
+
+
+.proyects {
+
+    /* width: 100%;
+    height: 100%;
+    */
+    
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: space-between; */
+
+     justify-content: space-between; 
+
+
+}
+
+.web {
+    border: 3px double rgb(14, 2, 2);
+    height: 170px;
+    width: 25%;
+    background-color: whitesmoke;
+
+    border-radius: 10px;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+}
+
+.web a {
+
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:768px) {
+    .web {
+
+        flex: 0 0 40%;
+        justify-content: center;
+    }
+    .contenido {
+       
+        
+        height: 500px; 
+           flex: 0 0 100%;
+   
+       }
+
+   
+
+}
+
+@media screen and (max-width:500px) {
+    .web {
+
+        flex: 0 0 92%;
+        justify-content: center;
+    }
+
+    
+
+}
+
+.imag {
+    margin-top: 5px;
+    border: 3px solid rgb(27, 22, 22);
+    border-radius: 85px;
+
+    height: 85px;
+    width: 85px;
+    align-self: center;
+} 
