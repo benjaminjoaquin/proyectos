@@ -151,7 +151,7 @@ iframe {
 }
 
 .contenido {
-    flex: 0 0 85%;
+    flex: 0 0 100%;
     background: #333;
     min-height: 450px;
 }
