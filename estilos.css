@@ -1,19 +1,11 @@
-/* *{
 
-
-    border: 2px solid red;
-} */
 
 body {
-    
     margin: 0;
-    background: #4d7488;
-    color: rgb(37, 6, 6);
-   
-   height: max-content;
-
+    background: #222;
+    color: #ddd;
+    height: max-content;
 }
-
 
 /* Animation webkit */
 @-webkit-keyframes myfirst {
@@ -45,23 +37,18 @@ body {
     }
 }
 
-
 .fish {
     background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
-
     width: 235px;
     height: 104px;
-
     margin-left: -235px;
     position: fixed;
-    /*absolute*/
     animation: myfirst 24s;
     -webkit-animation: myfirst 24s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     animation-timing-function: linear;
     -webkit-animation-timing-function: linear;
-
 }
 
 #fish {
@@ -74,14 +61,11 @@ body {
     -webkit-animation-delay: 12s;
 }
 
-
 #fish3 {
     top: 500px;
     animation-delay: 24s;
     -webkit-animation-delay: 24s;
 }
-
-
 
 h1,
 h2,
@@ -92,27 +76,27 @@ h4 {
 
 h1 {
     font-size: 2rem;
-    color: #b7e0fc;
+    color: #bbb;
 }
 
 h2 {
     font-size: 3rem;
+    color: #ccc;
 }
 
 h3 {
     font-size: 2rem;
+    color: #ccc;
 }
-
-
 
 p {
     line-height: 2rem;
     font-size: 1.2rem;
+    color: #aaa;
 }
 
-
 .contenedor {
-    opacity: 90%; 
+    opacity: 90%;
     margin: 0 auto;
     margin-top: 1%;
     background: transparent;
@@ -120,82 +104,61 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 950px;
-   /* min-height: 500px;*/
-    border: 5px solid lightgrey;
-    /* justify-content: center; */
+    border: 5px solid #333;
 }
-
 
 .banner {
     flex: 0 0 100%;
     height: 85px;
-    background-color: #383d3f;
-    border: 1px solid aquamarine;
+    background-color: #222;
+    border: 1px solid #666;
     opacity: 70%;
-
 }
 
 .sidebar {
-
     flex: 0 0 15%;
-    background: #b7e0fc;
+    background: #555;
 }
 
 .sidebar div {
-
-    background-color: #fafcfd;
+    background-color: #666;
     padding: 5px;
-    border: 3px solid black;
-   
+    border: 3px solid #222;
     border-radius: 10px;
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
-
 }
 
 a {
     text-decoration: none;
+    color: #ddd; /* Color de enlaces */
 }
 
-@media screen and (max-width:768px) {
-    .sidebar {
+a:hover {
+    color: #fff; /* Color de enlaces al pasar el mouse */
+}
 
+@media screen and (max-width: 768px) {
+    .sidebar {
         flex: 0 0 100%;
     }
-
 }
 
 iframe {
-    width: 100%; 
+    width: 100%;
     height: 100%;
-    
 }
 
 .contenido {
-
     flex: 0 0 85%;
-    background: #f2f7fa;
-    
-    /* height:  460px; */
-    /*   align-items:flex-start ;
-    display: inline; */
-   
-
-min-height: 450px;
+    background: #333;
+    min-height: 450px;
 }
 
-
-
-
-
-
-
 .footer {
-    background: #b7e0fc;
-
+    background: #555;
     flex: 0 0 100%;
-
 }
 
 .avatar {
@@ -217,30 +180,17 @@ min-height: 450px;
     padding: 1%;
 }
 
-
-
-
 .proyects {
-
-    /* width: 100%;
-    height: 100%;
-    */
-    
     display: flex;
     flex-wrap: wrap;
-    /* align-content: space-between; */
-
-     justify-content: space-between; 
-
-
+    justify-content: space-between;
 }
 
 .web {
-    border: 3px double rgb(14, 2, 2);
+    border: 3px double #111;
     height: 170px;
     width: 25%;
-    background-color: whitesmoke;
-
+    background-color: #444;
     border-radius: 10px;
     margin-top: 3%;
     margin-left: 3%;
@@ -249,46 +199,33 @@ min-height: 450px;
 }
 
 .web a {
-
     text-decoration: none;
 }
 
-
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .web {
-
         flex: 0 0 40%;
         justify-content: center;
     }
+
     .contenido {
-       
-        
-        height: 500px; 
-           flex: 0 0 100%;
-   
-       }
-
-   
-
+        height: 500px;
+        flex: 0 0 100%;
+    }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
     .web {
-
         flex: 0 0 92%;
         justify-content: center;
     }
-
-    
-
 }
 
 .imag {
     margin-top: 5px;
-    border: 3px solid rgb(27, 22, 22);
+    border: 3px solid #111;
     border-radius: 85px;
-
     height: 85px;
     width: 85px;
     align-self: center;
-} 
+}
